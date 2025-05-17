@@ -18,8 +18,11 @@ const sumRequestHandler = (req, res) => {
         res.write(`<h1>The result is ${result}</h1>`);
         res.write("</body>");
         res.write("</html>");
+        console.log("One")
         return res.end()
     })
+
+    console.log("Two")
 }
 
 exports.sumRequestHandler = sumRequestHandler;
